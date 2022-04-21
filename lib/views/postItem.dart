@@ -22,18 +22,23 @@ class PostListItem extends StatelessWidget {
                 ),
             child: Card(
               child: Column(children: [
+                //Image.network('https://i.ytimg.com/vi/AAjw3sjUv0I/maxresdefault.jpg'),
+                Image.asset(
+                  'assets/image.jpeg',
+                  fit: BoxFit.contain,
+                ),
                 //Text(post.id.toString()),
                 Text(
                   post.name,
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                  style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
                 ),
                 Text(
                   post.model,
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
+                  style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
                 ),
                 Text(
                   post.age.toString(),
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
+                  style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
                 ),
               ]),
             )));

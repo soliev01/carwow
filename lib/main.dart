@@ -8,6 +8,5 @@ void main() {
   BlocOverrides.runZoned(
     () => runApp(App()),
     blocObserver: SimpleBlocObserver(),
-    
   );
 }
